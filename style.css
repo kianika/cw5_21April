@@ -1,127 +1,101 @@
-* {
-    box-sizing: border-box;
-    font-family: 'Iranian Sans', sans-serif;
-    font-style: normal;
-}
-
-html, body {
-    margin: 0;
-    
-}
-
-.full-screen-container {
-   
-    background-image: url("gradient.jpg");
-    height: 100vh;
-    width: 100vw;
-    background-size: cover;
+@font-face {
+    font-family:'vazir-light-FD';
+    src: url(./fonts/Vazir-Light-FD.woff);
+} 
+.wrapper{
+    font-family: 'vazir-light-FD';
+    background-image: url(./gradient.jpg);
     background-position: center;
-    justify-content: center;
-    display: flex;
-    align-items: center;
-    
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 900px;
+    height: 450px;
+    text-align: center;
+    padding-top: 120px;
+    padding-bottom: 78px;
+    padding-right: 30px;
+
 }
 
-.container{
-    padding: 10px;
-    width: 650px;
-    height: 350px;
+.form_container{
+    font-family: 'vazir-light-FD';
+    width: 700px;
+    height: 370px;
     background-color: rgb(255, 255, 255);
     background-position: center;
     border-radius: 20px;
-    box-shadow: 5px 8px 18px 0px rgba(0, 0, 0, 0.39);
-    padding-left: 90px;
+    box-shadow: 5px 8px 18px 0px rgba(0,0,0,0.39);
+    margin-left: 100px;
+    margin-right: 200px;
+    margin-top: 14px;
+    
 
 }
-
-.signup-container{
+.form_singup{
     float: left;
-    display: inline;
-    width: 200px;
-    height: auto;
-    text-align: center;
+    padding-left: 60px;
 }
 
-.login-container{
-  float: left;
-  width: 200px;
-  height: auto;
-  text-align: center;
-  margin-left: 85px;
-  
-  
+.form_singin{
+    float: right;
+    padding-right: 60px;
 }
-
-
-
-
-input {
-    font-size: 12px;
+input{
+    color: #aaa;
+    font-family: 'vazir-light-FD';
+    font-size: 17px;
+    font-weight: bold;
     text-align: right;
-    border-radius: 20px;
-    width: 100%;
-    box-sizing: border-box;
+    border-radius: 24px;
+    width: 240px;
     height: 36px;
-    padding: 6px 9px;
-    background-color: #f0f0f0;
+    box-sizing: border-box;
     border: 1px solid #dbdcdc;
     padding-right: 40px;
     outline: none; 
-}
-::placeholder{
-    color: #b2b4b3;
-  
-}
-.input-group{
-    margin-bottom: 8px;
-}
+    background-color: #f3f3f3;
 
-.button{
-    margin-top: 18px;
 }
-h4{
-    padding: 14px;
-    font-size: 14px;
-    color: #646464;
-}
-
-.singup_submit {
+.singup_submit{
+    width: 235px;
+    height: 40px;
     color: rgb(255, 255, 255);
     text-align: center;
-    background-color: rgb(255, 103, 123);
-    border-color: transparent;
+    background-color: rgb(224, 73, 93);
+    border-color: transparent ;
     outline: none;
-    box-shadow: 5px 11px 13px 5px rgba(0, 0, 0, 0.12);
-    color: white;
+    box-shadow: 5px 5px 15px 5px rgba(77, 77, 77, 0.12);
+    padding-left: 45px;
 }
-
-.singin_enter {
-   
+.singin_enter{
+    width: 235px;
+    height: 40px;
     color: rgb(255, 255, 255);
     text-align: center;
     background-color: rgb(71, 209, 112);
     border-color: rgb(6, 248, 167);
     outline: none;
     border: none;
-    box-shadow: 5px 11px 13px 5px rgba(0, 0, 0, 0.12);
-    color: white;
+    box-shadow: 5px 5px 15px 5px rgba(77, 77, 77, 0.12);
+    padding-left: 50px;
 }
 
-.input-group i {
+.username{
+    font-weight: bolder;
+    padding-top: 30px;
+}
+
+
+.input-icons i {
     position:absolute;
-    right:0;
-    top: 8px;
-    padding: 4px 8px;
-   
+    right: 8px;
+    top: 4px 8px;
+    padding: 9px 8px;
 }
   
-.input-group {
-  
+.input-icons {
     margin-bottom: 10px;
     position: relative;
-    
 }
-
-    
-
-  
+::placeholder{
+    color: #b2b4b3;}
